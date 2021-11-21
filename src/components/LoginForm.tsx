@@ -5,8 +5,8 @@ import { Response } from "../interfaces/Response"
 import { useForm } from "./UseForm"
 import Button from '@mui/material/Button';
 
-export default function LoginForm(setToken: React.Dispatch<SetStateAction<string>>) {
-    // const [token, setToken] = useState<string>("");
+export default function LoginForm() {
+    const [token, setToken] = useState<string>("");
     // const { token, setToken } = useContext(TokenContext);
 
     const login = async () => {

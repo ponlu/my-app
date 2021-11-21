@@ -9,7 +9,7 @@ export default function Table(this: any) {
     return (
         <div className="wrapper">
             <RegisterForm />
-            <LoginForm setToken={setToken} />
+            <LoginForm />
             <LoadUsers />
         </div >
     );

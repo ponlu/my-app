@@ -6,6 +6,7 @@ import { TokenContext } from './TokenContext';
 import Button from '@mui/material/Button';
 
 export default function LoadUsers(this: any) {
+    const [token, setToken] = useState<string>("");
     const [users, updateUsers] = useState<User[]>([]);
     const getUsers = async () => {
         try {
