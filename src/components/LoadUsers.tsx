@@ -22,6 +22,7 @@ export default function LoadUsers(this: any) {
         try {
             const resp = await axios.delete("http://localhost:4000/deleteUser/" + user._id, { headers: { "auth-token": token } });
             // updateList(resp.data.map((user: IUser) => { username: user.username, email: user.email }));
+            // hej pontus
             console.log(resp);
             const username = user.username;
             updateUsers(users.filter(item => item.username !== username));
