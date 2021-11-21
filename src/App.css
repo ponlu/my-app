@@ -2,5 +2,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px;
+  margin: auto;
+  position: fixed;
+  top: 50%;
+  left: 40%;
 }
