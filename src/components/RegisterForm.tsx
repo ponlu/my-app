@@ -8,7 +8,11 @@ import Button from '@mui/material/Button';
 export default function RegisterForm(this: any) {
     const register = async (values: User) => {
         try {
-            const userLoginData: UserLoginData = { username: registerForm.values.username, password: registerForm.values.password, email: registerForm.values.email };
+            const userLoginData: UserLoginData = {
+                username: registerForm.values.username,
+                password: registerForm.values.password,
+                email: registerForm.values.email
+            };
             const resp = await axios.post<User>("http://localhost:4000/register", userLoginData);
 
             console.log(resp);

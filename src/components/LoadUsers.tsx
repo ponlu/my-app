@@ -18,31 +18,6 @@ export default function LoadUsers(this: any) {
         }
     };
 
-    const register = async (values: User) => {
-        try {
-            const userLoginData: UserLoginData = { username: "ponlu", password: "pontuslundin", email: "ponlu@gmail.com" };
-            const resp = await axios.post<User>("http://localhost:4000/register", userLoginData);
-
-            console.log(resp);
-        } catch (err: any) {
-            console.log(err.message);
-        }
-    };
-
-    const login = async () => {
-        try {
-            const userLoginData: UserLoginData = { username: "ponlu", password: "pontuslundin", email: "ponlu@gmail.com" };
-            const resp = await axios.post<Response<User>>("http://localhost:4000/login", userLoginData);
-            setToken(resp.data.token);
-            // console.log(Cookies.get("auth-token"));
-            // console.log(resp.headers["auth-token"]);
-            // console.log(resp.headers["content-type"]);
-            console.log(resp);
-        } catch (err: any) {
-            console.log(err.message);
-        }
-    };
-
     const deleteUser = async (user: User) => {
         try {
             const resp = await axios.delete("http://localhost:4000/deleteUser/" + user._id, { headers: { "auth-token": token } });
