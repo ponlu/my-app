@@ -7,7 +7,7 @@ export default function Table(this: any) {
     const [token, setToken] = useState<string>("");
 
     return (
-        <div className="wrapper">
+        <div className="App" >
             <RegisterForm />
             <LoginForm />
             <LoadUsers />

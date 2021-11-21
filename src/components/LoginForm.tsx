@@ -29,7 +29,7 @@ export default function LoginForm() {
     );
 
     return (
-        <div className="wrapper">
+        <div >
             <fieldset>
                 <form onSubmit={loginForm.onSubmit}>
                     <label>

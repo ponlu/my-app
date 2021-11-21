@@ -27,7 +27,7 @@ export default function RegisterForm(this: any) {
     );
 
     return (
-        <div className="wrapper">
+        <div >
             <fieldset>
                 <form onSubmit={registerForm.onSubmit}>
                     <label>

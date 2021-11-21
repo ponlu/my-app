@@ -33,7 +33,7 @@ export default function LoadUsers(this: any) {
     };
 
     return (
-        <div className="wrapper">
+        <div >
             <fieldset>
                 <Button variant="outlined" onClick={() => getUsers()}>
                     Load users
